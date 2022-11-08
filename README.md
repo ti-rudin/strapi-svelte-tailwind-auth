@@ -1,16 +1,13 @@
 # strapi-svelte-tailwind-auth
 
--backend-
+# backend
 
 nvm use 16
-
 npm i
-
 npm run develop
 
 
--frontend-
+# frontend
 
 npm i
-
 npm run dev
