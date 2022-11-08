@@ -2,9 +2,9 @@
 
 # backend
 
-nvm use 16
-npm i
-npm run develop
+## nvm use 16
+## npm i
+## npm run develop
 
 
 # frontend
