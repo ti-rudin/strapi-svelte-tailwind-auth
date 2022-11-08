@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pikets",
+  "info": {
+    "singularName": "piket",
+    "pluralName": "pikets",
+    "displayName": "Piket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "lengh": {
+      "type": "biginteger"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "короткий",
+        "длинный"
+      ],
+      "default": "короткий"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "ships": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ship.ship",
+      "mappedBy": "piket"
+    }
+  }
+}

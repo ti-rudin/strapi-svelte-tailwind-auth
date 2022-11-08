@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ships",
+  "info": {
+    "singularName": "ship",
+    "pluralName": "ships",
+    "displayName": "ship",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "piket": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::piket.piket",
+      "inversedBy": "ships"
+    },
+    "driver": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "ships"
+    },
+    "count": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
